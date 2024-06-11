@@ -1,3 +1,4 @@
+import { sidebarLinks } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -15,18 +16,7 @@ const LeftSidebar = () => {
             Podders
           </h1>
         </Link>
-        {[
-          {
-            route: "/profile",
-            label: "Profile",
-            imgUrl: "/icons/microphone.svg",
-          },
-          {
-            route: "/home",
-            label: "Home",
-            imgUrl: "/icons/home.svg",
-          },
-        ].map(({ route, label }) => {
+        {sidebarLinks.map(({ route, label }) => {
           return <Link href={route}>{label}</Link>;
         })}
       </nav>
