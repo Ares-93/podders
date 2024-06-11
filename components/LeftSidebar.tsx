@@ -16,8 +16,13 @@ const LeftSidebar = () => {
             Podders
           </h1>
         </Link>
-        {sidebarLinks.map(({ route, label }) => {
-          return <Link href={route}>{label}</Link>;
+        {sidebarLinks.map(({ route, label, imgURL }) => {
+          return (
+            <Link href={route} key={label} className="flex gap-3">
+              <Image src={imgURL} alt={label} width={24} height={24} />
+              <p>{label}</p>
+            </Link>
+          );
         })}
       </nav>
     </section>

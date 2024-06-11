@@ -1,7 +1,7 @@
 import React from "react";
 
 const Discover = () => {
-  return <div>Discover</div>;
+  return <div className="text-white-1">Discover</div>;
 };
 
 export default Discover;
