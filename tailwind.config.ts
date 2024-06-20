@@ -36,12 +36,19 @@ const config = {
         },
         orange: {
           1: "#F97535",
+          2: "#FFB74D",
         },
         gray: {
           1: "#71788B",
         },
         red: {
           1: "#E53935",
+        },
+        blue: {
+          1: "#0348fb",
+        },
+        green: {
+          4: "#07f28f",
         },
       },
       backgroundImage: {
